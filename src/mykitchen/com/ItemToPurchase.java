@@ -17,12 +17,12 @@ public class ItemToPurchase {
 	}
 	
 	// Parameterized Constructor
-	/* public ItemToPurchase(String itemName, String itemDescription, int itemPrice, int itemQuantity) {
+    public ItemToPurchase(String itemName, String itemDescription, int itemPrice, int itemQuantity) {
 		itemName = "none";
 		itemDescription = "none";
 		itemPrice = 0;
 		itemQuantity = 0;
-	} */
+	} 
 		
 	// Set method for itemName 
 	public void setName(String itemName) {
@@ -82,6 +82,11 @@ public class ItemToPurchase {
 	public static String printTotalCostItem2(ItemToPurchase item2) {
 	   printTotalCost = (item2.getName() + " " + item2.getQuantity() + " @ $" + item2.getItemPrice() + " = $" + item2.getTotalItemCost(item2));
 	   return printTotalCost;
+	}
+	
+	public static void printItemDescription(String itemDescription, String itemName) {
+		System.out.println(itemDescription);
+		System.out.println(itemName);
 	}
 }
 
