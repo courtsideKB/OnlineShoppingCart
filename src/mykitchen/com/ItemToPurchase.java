@@ -3,8 +3,9 @@ package mykitchen.com;
 public class ItemToPurchase {
 	
 	private static String printTotalCost; 
-	private String itemName; 
+	private static String printItemDescription;
 	private String itemDescription; 
+	private String itemName; 
 	private int itemPrice; 
 	private int itemQuantity; 
 	
@@ -18,10 +19,10 @@ public class ItemToPurchase {
 	
 	// Parameterized Constructor
     public ItemToPurchase(String itemName, String itemDescription, int itemPrice, int itemQuantity) {
-		itemName = "none";
+		/*itemName = "none";
 		itemDescription = "none";
 		itemPrice = 0;
-		itemQuantity = 0;
+		itemQuantity = 0;*/
 	} 
 		
 	// Set method for itemName 
@@ -59,7 +60,7 @@ public class ItemToPurchase {
 		return itemQuantity; 
 	}
 	
-	// Get method for getDescription
+	// Getter method for getDescription
 	public String getDescription() {
 		return itemDescription;
 	}
@@ -83,10 +84,10 @@ public class ItemToPurchase {
 	   printTotalCost = (item2.getName() + " " + item2.getQuantity() + " @ $" + item2.getItemPrice() + " = $" + item2.getTotalItemCost(item2));
 	   return printTotalCost;
 	}
-	
-	public static void printItemDescription(String itemDescription, String itemName) {
-		System.out.println(itemDescription);
-		System.out.println(itemName);
+	// Item Description print method for item1 
+	public static String printItemDescription(ItemToPurchase item) {
+		printItemDescription = (item.getName() + ": " + item.getDescription());
+		return printItemDescription;
 	}
 }
 
