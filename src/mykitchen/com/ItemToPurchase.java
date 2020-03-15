@@ -19,10 +19,10 @@ public class ItemToPurchase {
 	
 	// Parameterized Constructor
     public ItemToPurchase(String itemName, String itemDescription, int itemPrice, int itemQuantity) {
-		/*itemName = "none";
+		itemName = "none";
 		itemDescription = "none";
 		itemPrice = 0;
-		itemQuantity = 0;*/
+		itemQuantity = 0;
 	} 
 		
 	// Set method for itemName 
